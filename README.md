@@ -1,12 +1,12 @@
 # プログラムの説明
 
-import cv2
+import cv2　
 
 import matplotlib.pyplot as plt
 
 import numpy as np
 
-capture = cv2.VideoCapture(0)
+capture = cv2.VideoCapture(0)　//VideoCaputureオブジェクトを取得する。
 
 count = 0
 
