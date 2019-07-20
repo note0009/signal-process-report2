@@ -16,21 +16,21 @@ y = []
 
 while(True):
 
-	ret, frame = capture.read()　**//フレームに画像を代入する。**
+    ret, frame = capture.read()　//フレームに画像を代入する。
 	
-	print(frame.mean())
+    print(frame.mean())
 	
-	count = count+1
+    count = count+1
 	
-	x.append(count)　**//xにcountの値を代入する。**
+    x.append(count)　//xにcountの値を代入する。
 	
-	y.append(frame.mean())　**//yに画像の輝度値の平均を代入する。**
+    y.append(frame.mean())　//yに画像の輝度値の平均を代入する。
 	
-	if count==500:　**//countが500になったらwhileを止める。**
+    if count==500:　//countが500になったらwhileを止める。
 	
-		break
+         break
 		
-plt.plot(x, y) **//リストx,yをグラフにプロットする。**
+plt.plot(x, y)  //リストx,yをグラフにプロットする。
 
 plt.xlabel("x") 
 
